@@ -13,16 +13,16 @@
 </head>
 <body>
   <main class="main">
-    <section class="image">
-      <img src="./src/img/hero-mobile.jpg" alt="">
-    </section>
+    <div class="logo wrapper"><img src="./src/img/logo.svg" alt="Base Apparel logo" class="apparel"></div>
+    <div class="image">
+      <img src="./src/img/hero-mobile.jpg" alt="" class="girl">
+    </div>
     <section class="info">
       <div class="wrapper">
-        <div class="logo"><img src="./src/img/logo.svg" alt="Base Apparel logo"></div>
         <h1 class="info__heading"><span class="first">we're</span> coming soon</h1>
         <p class="info__text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our lauch deals.</p>
         <form class="info__newsletter">
-          <input type="text" id="mail" placeholder="Email Address">
+          <input type="email" id="mail" placeholder="Email Address" class="info__newsletter-input" maxlength="40">
           <button type="submit" class="info__newsletter-submit"><img src="./src/img/icon-arrow.svg" alt="Sign to newsletter icon"></button>
         </form>
       </div>

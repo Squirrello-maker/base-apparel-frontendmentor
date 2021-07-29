@@ -22,10 +22,110 @@ body
     width: 100%;
     max-width: 1200px;
 }
+.main
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.image
+{
+    height: 200px;
+    width: 100%;
+    .girl
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
 .info
 {
     padding: 2em;
+    order: 0;
+    &__heading
+    {
+        margin-top: .6em;
+        font-size: 3.6rem;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        text-align: center;
+        .first
+        {
+            display: block;
+            color: $des-red;
+            font-weight: 300;
+            letter-spacing: 10px;
+        }
+    }
+    &__text
+    {
+        margin-top: 1em;
+        color: $des-red;
+        text-align: center;
+        line-height: 24px;
+    }
+    &__newsletter
+    {
+        position: relative;
+        margin-top: 1em;
+        &-input
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 1em;
+            margin-top: 1.5em;
+            width: 100%;
+            background: none;
+            border: 1px solid $des-red-shadow;
+            border-radius: 50px;
+            &::placeholder
+            {
+                color: $des-red-shadow;
+                padding-left: 0.5em;
+                font-family: 'Josefin Sans';
+            }
+            &:focus
+            {
+                outline: none;
+                border: 1px solid $dark-red
+            }
+        }
+        &-submit
+        {
+            position: absolute;
+            top: -2px;
+            right: -1%;
+            width: 20%;
+            padding: .1em 0;
+            border: 1px solid transparent;
+            background-image: $second;
+            border-radius: 50px;
+            img
+            {
+                padding: .6em;
+            }
+        }
+    }
 }
-
+.logo
+{
+    padding: 1.5em;
+    .apparel
+    {
+        width: 35%;
+    }
+}
+@media (max-width: 320px)
+{
+    .main
+    {
+        height: 115vh;
+    }
+}
 
 @import './desktop';
