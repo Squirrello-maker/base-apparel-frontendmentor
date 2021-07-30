@@ -14,8 +14,8 @@
         z-index: 1;
         &__heading
         {
-            margin-top: 2em;
-            font-size: 7.5rem;
+            margin-top: 1.5em;
+            font-size: 7rem;
             letter-spacing: 12px;
             text-align: left;
             span
@@ -43,13 +43,16 @@
             }
             &-submit
             {
-                top: -1px;
+                top: 26%;
                 right: 5%;
                 width: 15%;
                 img
                 {
-                    padding: 1em;
+                    padding: .85em;
                 }
+            }
+            .return-text
+            {
             }
         }
   
