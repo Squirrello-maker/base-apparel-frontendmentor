@@ -14,7 +14,6 @@ body
 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.6rem;
-    background-image: $first;
 }
 .wrapper
 {
@@ -22,34 +21,41 @@ body
     width: 100%;
     max-width: 1200px;
 }
+.desktop
+{
+    display: none;
+}
+.pattern
+{
+    display: none;
+}
 .main
 {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-image: $first;
 }
 .image
 {
     height: 200px;
     width: 100%;
-    .girl
-    {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
+    background-image: url('../img/hero-mobile.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .info
 {
     padding: 2em;
     order: 0;
+    position: relative;
     &__heading
     {
         margin-top: .6em;
         font-size: 3.6rem;
         letter-spacing: 8px;
+        color: $dark-red;
         text-transform: uppercase;
         text-align: center;
         .first
@@ -105,6 +111,9 @@ body
             border: 1px solid transparent;
             background-image: $second;
             border-radius: 50px;
+            transition: background-image .8s;
+            box-shadow: 0px 2px 5px $des-red;
+            cursor: pointer;
             img
             {
                 padding: .6em;
